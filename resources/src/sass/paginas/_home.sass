@@ -1,0 +1,116 @@
+.centraliza
+	width: 1040px
+	margin: 0 auto
+	@media(max-width: 1040px)
+		width: 100%
+		padding: 0 20px
+.img-responsive
+	max-width: 100%
+	height: auto
+
+/*menu-global*/
+#menu-global
+	font-family: 'Roboto', sans-serif
+	margin-bottom: 20px
+	padding-top: 20px
+	padding-bottom: 10px
+	border-bottom: 2px solid $cinza-claro
+	.box-logo
+		figure
+			margin-bottom: 20px
+			width: 100%
+			display: flex
+			justify-content: center
+	.box-itens-menu
+		display: flex
+		justify-content: flex-start
+		.menu-de-navegacao
+			display: flex
+			li
+				margin-right: 10px
+				a
+					text-decoration: none
+					color: $cinza
+					border-top: 2px solid $branco
+					padding-top: 8px
+					&:hover
+						border-top: 2px solid $cinza
+						transition: 0.9s
+
+	.box-social-media
+		display: flex
+		justify-content: flex-end
+		.social-media
+			display: flex
+			li
+				margin-right: 10px
+				a
+					text-decoration: none
+					color: $cinza
+					+font-size(20px)
+					padding-top: 8px
+					border-top: 2px solid $branco
+					&:hover
+						border-top: 2px solid $cinza
+						transition: 0.9s
+/*portfolio*/
+#portfolio
+	a
+		&:hover
+			figcaption
+				opacity: 1
+
+		figure
+			position: relative
+			display: flex
+			justify-content: center
+			margin-bottom: 20px
+			align-items: center
+			img
+				width: 100%
+				height: 365px
+				object-fit: cover
+			figcaption
+				display: flex
+				justify-content: center
+				align-items: center
+				position: absolute
+				width: 100%
+				height: 100%
+				background: rgba(0,0,0, 0.8)
+				opacity: 0
+				transition: 0.6s
+				h1
+					color: $branco
+					+font-size(18px)
+					font-family: 'Roboto', sans-serif
+
+
+/*rodape*/
+#footer
+	font-family: 'Roboto', sans-serif
+	padding-top: 30px
+	padding-bottom: 20px
+	background: $cinza-claro
+	.box-social-media
+		display: flex
+		justify-content: center
+		margin-bottom: 20px
+		.social-media-rodape
+			display: flex
+			li
+				margin-right: 10px
+				+font-size(18px)
+				a
+					color: $cinza
+	.box-copy
+		display: flex
+		justify-content: center
+		p
+			+font-size(14px)
+
+/*pushy menu*/
+.menu-btn
+	display: none
+	@media (max-width: 600px)
+		display: block
